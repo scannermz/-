@@ -1,0 +1,20 @@
+package hunderd;
+
+public class question {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//百钱买百鸡  公鸡 5   母鸡   3   小鸡  1块3只
+		for(int i=0;i<=20;i++)
+		{
+			for(int j=0;j<=(100-5*i)/3;j++)
+			{
+				int number = (100-i*5-j*3)*3;
+				if(i+j+(100-5*i-3*j)*3 == 100)
+				System.out.println("公鸡："+i+"只"+"  "+"母鸡："+j+"只"+"  "+"小鸡："+number+"只");
+			}
+			
+		}
+	}
+
+}
